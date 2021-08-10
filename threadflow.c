@@ -374,6 +374,7 @@ threadflow_define_common(procflow_t *procflow, char *name,
 	threadflow->tf_instance = instance;
 	(void) strcpy(threadflow->tf_name, name);
 	threadflow->tf_process = procflow;
+	printf("\n");
 	(void) pthread_mutex_init(&threadflow->tf_lock,
 	    ipc_mutexattr(IPC_MUTEX_NORMAL));
 
